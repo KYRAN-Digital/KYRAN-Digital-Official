@@ -210,7 +210,7 @@ a {
 
 .brand-copy h1,
 .section-heading h2,
-.footer-banner h2 {
+.footer-banner h4 {
   margin: 0;
   font-family: "Space Grotesk", sans-serif;
   letter-spacing: -0.04em;
@@ -550,10 +550,16 @@ a {
 
 .footer-banner {
   margin-top: 18px;
-  padding: 26px 22px;
+  padding: 20px 18px 22px;
+  min-height: 118px;
   background:
-    linear-gradient(135deg, rgba(10, 34, 35, 0.98), rgba(17, 85, 87, 0.96)),
-    linear-gradient(90deg, rgba(197, 162, 127, 0.15), rgba(197, 162, 127, 0));
+    radial-gradient(circle at 16% 18%, rgba(34, 161, 164, 0.14), transparent 28%),
+    radial-gradient(circle at 84% 18%, rgba(255, 255, 255, 0.08), transparent 24%),
+    linear-gradient(140deg, rgba(7, 20, 21, 0.98), rgba(13, 63, 65, 0.96));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow:
+    0 20px 46px rgba(7, 20, 21, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
   color: #f5f1ea;
   text-align: center;
 }
@@ -561,35 +567,33 @@ a {
 .footer-banner::before {
   content: "";
   position: absolute;
-  width: 230px;
-  height: 230px;
-  right: -90px;
-  top: -90px;
+  width: 170px;
+  height: 170px;
+  right: -58px;
+  top: -58px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.06);
 }
 
-.footer-banner h2 {
-  font-size: clamp(1.7rem, 7vw, 2.35rem);
+.footer-banner h4 {
+  position: relative;
+  z-index: 1;
+  margin-top: 2px;
+  font-size: clamp(1.28rem, 4.4vw, 1.6rem);
+  line-height: 1.02;
+  color: #fffdfa;
 }
 
 .footer-banner p {
   position: relative;
   z-index: 1;
-  margin: 12px 0 10px;
-  max-width: 42ch;
+  margin: 8px auto 0;
+  max-width: 28ch;
   margin-left: auto;
   margin-right: auto;
-  line-height: 1.75;
+  font-size: clamp(0.82rem, 2.35vw, 0.94rem);
+  line-height: 1.42;
   color: rgba(245, 241, 234, 0.82);
-}
-
-.footer-banner small {
-  position: relative;
-  z-index: 1;
-  display: block;
-  color: rgba(245, 241, 234, 0.68);
-  letter-spacing: 0.05em;
 }
 
 .reveal {
@@ -649,6 +653,11 @@ a {
     min-height: 110px;
     gap: 10px;
   }
+
+  .footer-banner {
+    min-height: 112px;
+    padding: 18px 16px 20px;
+  }
 }
 
 @media (max-width: 460px) {
@@ -698,6 +707,21 @@ a {
   .link-card {
     min-height: 104px;
     grid-template-columns: 38px minmax(0, 1fr);
+  }
+
+  .footer-banner {
+    min-height: 104px;
+    padding: 16px 14px 18px;
+  }
+
+  .footer-banner h4 {
+    font-size: 1.14rem;
+  }
+
+  .footer-banner p {
+    font-size: 0.76rem;
+    line-height: 1.32;
+    max-width: 24ch;
   }
 
   .service-marquee {
