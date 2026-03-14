@@ -417,6 +417,7 @@ a {
 }
 
 .detail-card {
+  min-width: 0;
   min-height: 144px;
   padding: 18px;
   border-radius: 24px;
@@ -440,6 +441,8 @@ a {
   display: block;
   font-size: 1rem;
   line-height: 1.45;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .detail-card small {
@@ -448,6 +451,8 @@ a {
   font-size: 0.83rem;
   line-height: 1.45;
   color: rgba(7, 20, 21, 0.66);
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .link-grid {
@@ -456,9 +461,10 @@ a {
 
 .link-card {
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: auto minmax(0, 1fr) auto;
   align-items: center;
   gap: 12px;
+  min-width: 0;
   min-height: 94px;
   padding: 16px;
   border-radius: 24px;
@@ -501,6 +507,8 @@ a {
 .link-copy strong {
   display: block;
   font-size: 0.98rem;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .link-copy small {
@@ -508,6 +516,12 @@ a {
   margin-top: 6px;
   color: rgba(7, 20, 21, 0.68);
   line-height: 1.45;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.link-copy {
+  min-width: 0;
 }
 
 .link-arrow {
@@ -616,6 +630,39 @@ a {
 
   .brand-copy h1 {
     font-size: 2.3rem;
+  }
+
+  .detail-card,
+  .link-card {
+    padding: 14px;
+  }
+
+  .detail-card strong {
+    font-size: 0.92rem;
+    line-height: 1.4;
+  }
+
+  .detail-card small {
+    font-size: 0.78rem;
+  }
+
+  .link-copy strong {
+    font-size: 0.84rem;
+    line-height: 1.35;
+  }
+
+  .link-copy small {
+    font-size: 0.74rem;
+    line-height: 1.32;
+  }
+
+  .platform-icon {
+    width: 42px;
+    height: 42px;
+  }
+
+  .link-arrow {
+    font-size: 1.05rem;
   }
 
   .service-marquee {
