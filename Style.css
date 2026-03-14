@@ -607,31 +607,11 @@ a {
     width: 92px;
     height: 92px;
   }
-
-  .detail-grid,
-  .link-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .detail-card,
-  .link-card {
-    min-height: auto;
-  }
 }
 
 @media (max-width: 460px) {
-  .hero-topline,
-  .brand-block {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
   .hero-topline {
     margin-bottom: 16px;
-  }
-
-  .action-grid {
-    grid-template-columns: 1fr;
   }
 
   .brand-copy h1 {
