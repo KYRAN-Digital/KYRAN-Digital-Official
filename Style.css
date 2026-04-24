@@ -194,6 +194,15 @@ body::after {
   stroke-linecap: round;
   stroke-linejoin: round;
 }
+/* WhatsApp FIX */
+.icon-btn.whatsapp {
+  background: #25D366;   /* brand color */
+}
+
+.icon-btn.whatsapp svg {
+  fill: white;
+  stroke: none;
+}
 
 /* COLORS */
 .call { background: linear-gradient(135deg, var(--sand), #a67f5f); }
