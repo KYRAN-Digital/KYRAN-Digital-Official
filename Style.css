@@ -200,8 +200,8 @@ body::after {
 }
 
 .icon-btn.whatsapp svg {
-  fill: white;
-  stroke: none;
+  fill: white !important;
+  stroke: none !important;
 }
 
 /* COLORS */
