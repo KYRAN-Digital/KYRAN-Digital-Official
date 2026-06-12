@@ -127,25 +127,19 @@ h3::before {
 }
 
 .logo-shell {
-  width: 110px;
-  height: 110px;
+  width: 100px;
+  height: 100px;
   margin: auto;
-  border-radius: 24px;
-  padding: 8px;
-  background: linear-gradient(145deg, rgba(17, 103, 106, 0.12), rgba(187, 154, 124, 0.15));
-  border: 2px solid var(--sand-light); /* Beige accent border ring */
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  box-shadow: 0 8px 24px rgba(187, 154, 124, 0.08);
 }
 
 .profile-photo {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  border-radius: 16px;
+  object-fit: contain;
 }
 
 .brand-name {
